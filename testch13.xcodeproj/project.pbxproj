@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		8DCB2E1C1D976ECD00082EA8 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB2E1B1D976ECD00082EA8 /* main.cpp */; };
+		8DCB2E351D9B1F3A00082EA8 /* Student.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB2E2E1D9B1F3A00082EA8 /* Student.cpp */; };
+		8DCB2E371D9B1F3A00082EA8 /* Date.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB2E311D9B1F3A00082EA8 /* Date.cpp */; };
+		8DCB2E381D9B1F3A00082EA8 /* UtilitiesClass.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 8DCB2E331D9B1F3A00082EA8 /* UtilitiesClass.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,12 @@
 /* Begin PBXFileReference section */
 		8DCB2E181D976ECD00082EA8 /* testch13 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = testch13; sourceTree = BUILT_PRODUCTS_DIR; };
 		8DCB2E1B1D976ECD00082EA8 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		8DCB2E2E1D9B1F3A00082EA8 /* Student.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Student.cpp; sourceTree = "<group>"; };
+		8DCB2E2F1D9B1F3A00082EA8 /* Student.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Student.hpp; sourceTree = "<group>"; };
+		8DCB2E311D9B1F3A00082EA8 /* Date.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Date.cpp; sourceTree = "<group>"; };
+		8DCB2E321D9B1F3A00082EA8 /* Date.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Date.hpp; sourceTree = "<group>"; };
+		8DCB2E331D9B1F3A00082EA8 /* UtilitiesClass.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = UtilitiesClass.cpp; sourceTree = "<group>"; };
+		8DCB2E341D9B1F3A00082EA8 /* UtilitiesClass.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = UtilitiesClass.hpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +66,12 @@
 		8DCB2E1A1D976ECD00082EA8 /* testch13 */ = {
 			isa = PBXGroup;
 			children = (
+				8DCB2E2E1D9B1F3A00082EA8 /* Student.cpp */,
+				8DCB2E2F1D9B1F3A00082EA8 /* Student.hpp */,
+				8DCB2E311D9B1F3A00082EA8 /* Date.cpp */,
+				8DCB2E321D9B1F3A00082EA8 /* Date.hpp */,
+				8DCB2E331D9B1F3A00082EA8 /* UtilitiesClass.cpp */,
+				8DCB2E341D9B1F3A00082EA8 /* UtilitiesClass.hpp */,
 				8DCB2E1B1D976ECD00082EA8 /* main.cpp */,
 			);
 			path = testch13;
@@ -118,7 +133,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8DCB2E351D9B1F3A00082EA8 /* Student.cpp in Sources */,
 				8DCB2E1C1D976ECD00082EA8 /* main.cpp in Sources */,
+				8DCB2E381D9B1F3A00082EA8 /* UtilitiesClass.cpp in Sources */,
+				8DCB2E371D9B1F3A00082EA8 /* Date.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +227,7 @@
 		8DCB2E201D976ECD00082EA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -216,6 +235,7 @@
 		8DCB2E211D976ECD00082EA8 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.11;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
