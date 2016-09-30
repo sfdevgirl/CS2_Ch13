@@ -34,8 +34,7 @@ public:
     string getConvertYear();
     string getConvertMonth();
     string getConvertDay();
-    
-    int getString(string, string, string);
+    string getString(string, string, string);
     
 };
 

@@ -7,19 +7,15 @@
 
 #include "Date.hpp"
 
-void Date::initVar(void){
-	month = 1;
-	day = 1;
-	year = 1900;
-}//init
+
 
 Date::Date() {
 	// TODO Auto-generated constructor stub
-	initVar();
+	
 }
 
 Date::Date(int aMonth, int aDay, int aYear){
-	initVar();
+	
 	setDay(day);
 	setMonth(month);
 	setYear(year);
@@ -43,7 +39,7 @@ bool Date::setMonth(int newMonth){
 bool Date::setDay(int newDay){
 	bool isTrue;
 		if(newDay >= 1 && newDay <= 31){
-		    month = newDay;
+		    day = newDay;
 		    isTrue = true;
 		 }//if
 		 else{
@@ -53,8 +49,8 @@ bool Date::setDay(int newDay){
 }//setdate
 bool Date::setYear(int newYear){
 	bool isTrue;
-	if(newYear >= 1 && newYear <= 12){
-	    month = newYear;
+	if(newYear >= 1990 && newYear <= 2020){
+	    year = newYear;
 	    isTrue = true;
 	}//if
 	else{
@@ -106,11 +102,13 @@ string Date::getConvertDay(){
     day = getDay();
     convert << day;
     dayString = convert.str();
+    
     return dayString;
 }
 
 
-int Date::getString(string monthString, string dayString, string yearString){
+string Date::getString(string monthString, string dayString, string yearString){
     string date;
-    return monthString + "/" + dayString + "/" yearString;
+    date = monthString + "/" + dayString + "/" + yearString;
+    return date;
 }

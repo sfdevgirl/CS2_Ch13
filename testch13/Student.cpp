@@ -13,16 +13,11 @@
 #include <sstream>
 using namespace std;
 
-//void Student::initStudent(void){
-//			int StuId = 0;
-//			char gender= ' ';
-//			int age= 0;
-//
-//}
+
 
 Student::Student() {
 	// TODO Auto-generated constructor stub
-//	initStudent();
+
 }
 
 Student::~Student() {
